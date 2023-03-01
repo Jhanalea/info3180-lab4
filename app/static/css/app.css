@@ -18,3 +18,24 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.collection_container {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.image_container {
+    padding: 10px;
+    align-items: center;
+}
+
+.image {
+    display: block;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
