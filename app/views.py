@@ -78,6 +78,12 @@ def get_image(filename):
 def files():
     return render_template('files.html', filename=get_uploaded_images())
 
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    flash('Logged Out', 'warning')
+    return redirect(url_for('home'))
 
 # user_loader callback. This callback is used to reload the user object from
 # the user ID stored in the session
