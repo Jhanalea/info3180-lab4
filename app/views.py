@@ -89,7 +89,7 @@ def get_uploaded_images():
     upload_folder = './uploads'
     filenames = []
     for filename in os.listdir(upload_folder):
-        if os.path.isfile(os.path.join(upload_folder, filename)):
+        if os.path.isfile(os.path.join(upload_folder, filename)) and filename.endswith(('.jpg', '.png')):
             filenames.append(filename)
     return filenames
 
